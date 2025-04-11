@@ -1,0 +1,242 @@
+
+    <header>
+        <div class="header-container">
+            <a routerLink="/" class="logo">Luxury<span>Scents</span></a>
+            <nav>
+                <ul>
+                    <li><a routerLink="/">Főoldal</a></li>
+                    <li><a routerLink="/parfumok">Parfümök</a></li>
+                    <li><a href="#">Újdonságok</a></li>
+                    <li><a href="#">Rólunk</a></li>
+                    <li><a href="#">Kapcsolat</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <h1>A <span>tökéletes</span> illat keresése</h1>
+    </div>
+
+    <div class="filters-container">
+        <div class="filters">
+            <div class="filter-group">
+                <span class="filter-label">Kategória:</span>
+                <select class="filter-select">
+                    <option value="all">Összes parfüm</option>
+                    <option value="women">Női parfümök</option>
+                    <option value="men">Férfi parfümök</option>
+                    <option value="unisex">Unisex parfümök</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <span class="filter-label">Márka:</span>
+                <select class="filter-select">
+                    <option value="all">Összes márka</option>
+                    <option value="chanel">Chanel</option>
+                    <option value="dior">Dior</option>
+                    <option value="tomford">Tom Ford</option>
+                    <option value="givenchy">Givenchy</option>
+                    <option value="ysl">Yves Saint Laurent</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <span class="filter-label">Ár:</span>
+                <select class="filter-select">
+                    <option value="all">Összes</option>
+                    <option value="low">30.000 Ft alatt</option>
+                    <option value="medium">30.000 - 50.000 Ft</option>
+                    <option value="high">50.000 Ft felett</option>
+                </select>
+            </div>
+            <div class="sort-group">
+                <span class="filter-label">Rendezés:</span>
+                <select class="filter-select">
+                    <option value="popular">Népszerűség szerint</option>
+                    <option value="newest">Legújabb</option>
+                    <option value="price-asc">Ár: alacsony - magas</option>
+                    <option value="price-desc">Ár: magas - alacsony</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="products-container">
+        <div class="products-grid">
+            <!-- Első sor -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/api/placeholder/300/250" alt="Chanel Coco Mademoiselle" width="100%" height="100%">
+                    <div class="product-badge">Népszerű</div>
+                </div>
+                <div class="product-info">
+                    <div class="product-brand">Chanel</div>
+                    <h3 class="product-name">Coco Mademoiselle</h3>
+                    <p class="product-desc">Friss, keleties illat a magabiztos nők számára.</p>
+                    <div class="product-meta">
+                        <div class="product-price">36.900 Ft</div>
+                        <div class="product-rating">★★★★★</div>
+                    </div>
+                    <a href="product-detail.html" class="product-btn">Részletek</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/api/placeholder/300/250" alt="Dior Sauvage" width="100%" height="100%">
+                </div>
+                <div class="product-info">
+                    <div class="product-brand">Dior</div>
+                    <h3 class="product-name">Sauvage Parfum</h3>
+                    <p class="product-desc">Intenzív, friss illat férfiaknak, a természet erejével.</p>
+                    <div class="product-meta">
+                        <div class="product-price">42.500 Ft</div>
+                        <div class="product-rating">★★★★☆</div>
+                    </div>
+                    <a href="#" class="product-btn">Részletek</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/api/placeholder/300/250" alt="Tom Ford Black Orchid" width="100%" height="100%">
+                    <div class="product-badge">-15%</div>
+                </div>
+                <div class="product-info">
+                    <div class="product-brand">Tom Ford</div>
+                    <h3 class="product-name">Black Orchid</h3>
+                    <p class="product-desc">Elegáns és erőteljes unisex illat különleges alkalmakra.</p>
+                    <div class="product-meta">
+                        <div class="product-price">54.900 Ft</div>
+                        <div class="product-rating">★★★★★</div>
+                    </div>
+                    <a href="#" class="product-btn">Részletek</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/api/placeholder/300/250" alt="Armani Acqua di Gio" width="100%" height="100%">
+                </div>
+                <div class="product-info">
+                    <div class="product-brand">Armani</div>
+                    <h3 class="product-name">Acqua di Giò</h3>
+                    <p class="product-desc">Friss, tengeri illat férfiaknak, a szabadság érzetével.</p>
+                    <div class="product-meta">
+                        <div class="product-price">29.900 Ft</div>
+                        <div class="product-rating">★★★★☆</div>
+                    </div>
+                    <a href="#" class="product-btn">Részletek</a>
+                </div>
+            </div>
+            
+            <!-- Második sor -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/api/placeholder/300/250" alt="Givenchy L'Interdit" width="100%" height="100%">
+                    <div class="product-badge">Újdonság</div>
+                </div>
+                <div class="product-info">
+                    <div class="product-brand">Givenchy</div>
+                    <h3 class="product-name">L'Interdit</h3>
+                    <p class="product-desc">Elegáns, virágos-woody illat a modern nő számára.</p>
+                    <div class="product-meta">
+                        <div class="product-price">39.900 Ft</div>
+                        <div class="product-rating">★★★★☆</div>
+                    </div>
+                    <a href="#" class="product-btn">Részletek</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/api/placeholder/300/250" alt="YSL Black Opium" width="100%" height="100%">
+                </div>
+                <div class="product-info">
+                    <div class="product-brand">Yves Saint Laurent</div>
+                    <h3 class="product-name">Black Opium</h3>
+                    <p class="product-desc">Kávés, fűszeres, nőies illat az éjszaka szerelmeseinek.</p>
+                    <div class="product-meta">
+                        <div class="product-price">45.900 Ft</div>
+                        <div class="product-rating">★★★★★</div>
+                    </div>
+                    <a href="#" class="product-btn">Részletek</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/api/placeholder/300/250" alt="Creed Aventus" width="100%" height="100%">
+                    <div class="product-badge">Limitált</div>
+                </div>
+                <div class="product-info">
+                    <div class="product-brand">Creed</div>
+                    <h3 class="product-name">Aventus</h3>
+                    <p class="product-desc">Legendás, gyümölcsös-fűszeres illat sikeres férfiaknak.</p>
+                    <div class="product-meta">
+                        <div class="product-price">89.900 Ft</div>
+                        <div class="product-rating">★★★★★</div>
+                    </div>
+                    <a href="#" class="product-btn">Részletek</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/api/placeholder/300/250" alt="Gucci Bloom" width="100%" height="100%">
+                </div>
+                <div class="product-info">
+                    <div class="product-brand">Gucci</div>
+                    <h3 class="product-name">Bloom</h3>
+                    <p class="product-desc">Intenzív, virágos illat, mely a természet szépségét idézi.</p>
+                    <div class="product-meta">
+                        <div class="product-price">34.900 Ft</div>
+                        <div class="product-rating">★★★★☆</div>
+                    </div>
+                    <a href="#" class="product-btn">Részletek</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pagination">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">&raquo;</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <div class="footer-logo">Luxury<span>Scents</span></div>
+                <p>Minőségi parfümök széles választéka egy helyen. Fedezze fel exkluzív kínálatunkat és találja meg az Ön személyiségéhez illő tökéletes illatot.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Vásárlói információk</h4>
+                <ul>
+                    <li><a href="#">Szállítási információk</a></li>
+                    <li><a href="#">Fizetési módok</a></li>
+                    <li><a href="#">Visszatérítési szabályzat</a></li>
+                    <li><a href="#">GYIK</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Parfümök</h4>
+                <ul>
+                    <li><a href="#">Női parfümök</a></li>
+                    <li><a href="#">Férfi parfümök</a></li>
+                    <li><a href="#">Unisex parfümök</a></li>
+                    <li><a href="#">Újdonságok</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Kapcsolat</h4>
+                <ul>
+                    <li><a href="#">Rólunk</a></li>
+                    <li><a href="#">Üzleteink</a></li>
+                    <li><a href="#">Kapcsolatfelvétel</a></li>
+                    <li><a href="#">Karrier</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 LuxuryScents. Minden jog fenntartva.</p>
+        </div>
+    </footer>
