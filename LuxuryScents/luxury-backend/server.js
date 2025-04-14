@@ -53,7 +53,7 @@ app.get('/parfumok/:id', (req, res) => {
 // POST: Új parfüm
 app.post('/parfumok', (req, res) => {
   const { marka, szeria, rovid_leiras, ar, ertekeles, reszletes_leiras, tipus, nem, illatcsalad, megjelenes_eve, raktaron } = req.body;
-  db.query('INSERT INTO parfumok (marka, szeria, rovid_leiras, ar, ertekeles) VALUES (?, ?, ?, ?, ?)', 
+  db.query('INSERT INTO parfumok (marka, szeria, rovid_leiras, ar, ertekeles, kepUrl) VALUES (?, ?, ?, ?, ?, ?)', 
     [marka, szeria, rovid_leiras, ar, ertekeles], (err, result) => {
       if (err) return res.status(500).send('Hiba');
       const id = result.insertId;
@@ -68,7 +68,7 @@ app.post('/parfumok', (req, res) => {
 // PUT: Parfüm frissítése
 app.put('/parfumok/:id', (req, res) => {
   const { marka, szeria, rovid_leiras, ar, ertekeles, reszletes_leiras, tipus, nem, illatcsalad, megjelenes_eve, raktaron } = req.body;
-  db.query('UPDATE parfumok SET marka = ?, szeria = ?, rovid_leiras = ?, ar = ?, ertekeles = ? WHERE id = ?', 
+  db.query('UPDATE parfumok SET marka = ?, szeria = ?, rovid_leiras = ?, ar = ?, ertekeles = ?, kepUrl = ? WHERE id = ?', 
     [marka, szeria, rovid_leiras, ar, ertekeles, req.params.id], (err) => {
       if (err) return res.status(500).send('Hiba');
       db.query('UPDATE reszletes SET reszletes_leiras = ?, tipus = ?, nem = ?, illatcsalad = ?, megjelenes_eve = ?, raktaron = ? WHERE id = ?', 
