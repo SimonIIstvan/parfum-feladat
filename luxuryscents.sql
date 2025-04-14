@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2025. Ápr 11. 09:45
+-- Létrehozás ideje: 2025. Ápr 14. 18:07
 -- Kiszolgáló verziója: 10.4.32-MariaDB
 -- PHP verzió: 8.0.30
 
@@ -33,20 +33,21 @@ CREATE TABLE `parfumok` (
   `szeria` varchar(100) NOT NULL,
   `rovid_leiras` text DEFAULT NULL,
   `ar` decimal(10,2) NOT NULL CHECK (`ar` >= 0),
-  `ertekeles` decimal(3,1) DEFAULT NULL CHECK (`ertekeles` >= 0 and `ertekeles` <= 5)
+  `ertekeles` decimal(3,1) DEFAULT NULL CHECK (`ertekeles` >= 0 and `ertekeles` <= 5),
+  `kepUrl` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
 
 --
 -- A tábla adatainak kiíratása `parfumok`
 --
 
-INSERT INTO `parfumok` (`id`, `marka`, `szeria`, `rovid_leiras`, `ar`, `ertekeles`) VALUES
-(1, 'Chanel', 'No. 5', 'Klasszikus női parfüm', 45000.00, 5.0),
-(2, 'Dior', 'Sauvage', 'Friss férfi illat', 35000.00, 4.0),
-(3, 'Gucci', 'Bloom', 'Virágos női parfüm', 30000.00, 4.0),
-(4, 'Tom Ford', 'Black Orchid', 'Luxus unisex illat', 50000.00, 5.0),
-(5, 'Yves Saint Laurent', 'Black Opium', 'Érzéki női parfüm', 40000.00, 4.0),
-(6, 'Creed', 'Aventus', 'Exkluzív férfi illat', 60000.00, 5.0);
+INSERT INTO `parfumok` (`id`, `marka`, `szeria`, `rovid_leiras`, `ar`, `ertekeles`, `kepUrl`) VALUES
+(1, 'Chanel', 'No. 5', 'Klasszikus női parfüm', 45000.00, 5.0, 'https://github.com/SimonIIstvan/parfum-feladat/blob/main/LuxuryScents/luxury-kepek/chanel-n5.png?raw=true'),
+(2, 'Dior', 'Sauvage', 'Friss férfi illat', 35000.00, 4.0, 'https://github.com/SimonIIstvan/parfum-feladat/blob/main/LuxuryScents/luxury-kepek/dior-sauvage.png?raw=true'),
+(3, 'Gucci', 'Bloom', 'Virágos női parfüm', 30000.00, 4.0, 'https://github.com/SimonIIstvan/parfum-feladat/blob/main/LuxuryScents/luxury-kepek/gucci-bloom.png?raw=true'),
+(4, 'Tom Ford', 'Black Orchid', 'Luxus unisex illat', 50000.00, 5.0, 'https://github.com/SimonIIstvan/parfum-feladat/blob/main/LuxuryScents/luxury-kepek/tomford-blackorchid.png?raw=true'),
+(5, 'Yves Saint Laurent', 'Black Opium', 'Érzéki női parfüm', 40000.00, 4.0, 'https://github.com/SimonIIstvan/parfum-feladat/blob/main/LuxuryScents/luxury-kepek/ysl-blackopium.png?raw=true'),
+(6, 'Creed', 'Aventus', 'Exkluzív férfi illat', 60000.00, 5.0, 'https://github.com/SimonIIstvan/parfum-feladat/blob/main/LuxuryScents/luxury-kepek/creed-aventus.png?raw=true');
 
 -- --------------------------------------------------------
 
