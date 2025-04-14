@@ -131,8 +131,9 @@ nav ul li a:hover {
 }
 
 .product-image {
-    height: 250px;
-    background-color: #f9f9f9;
+    padding-top: 1rem;
+    margin: 0 auto;
+    max-width: 120px;
     position: relative;
     overflow: hidden;
 }
